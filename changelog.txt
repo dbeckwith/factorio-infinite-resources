@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2020-01-23
+  Changes:
+    - Update to Factorio 0.18
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2019-11-11
+  Changes:
+    - Proper changelog
+  Bugfixes:
+    - Fixed resources generated before the mod was adding not being made infinite
