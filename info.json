@@ -1,10 +1,10 @@
 {
   "name": "sonaxaton-infinite-resources",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "title": "Infinite Resources",
   "author": "sonaxaton",
   "homepage": "https://mods.factorio.com/mod/sonaxaton-infinite-resources",
   "description": "Makes all resources infinite.",
-  "factorio_version": "0.18",
-  "dependencies": ["base >= 0.18"]
+  "factorio_version": "1.0",
+  "dependencies": []
 }
