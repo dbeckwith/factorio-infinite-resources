@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 2020-10-06
+  Bugfixes:
+    - Made script that fixes resources when they're generated more reliable
+---------------------------------------------------------------------------------------------------
 Version: 0.4.4
 Date: 2020-08-14
   Minor Changes:
@@ -19,4 +24,4 @@ Date: 2019-11-11
   Changes:
     - Proper changelog
   Bugfixes:
-    - Fixed resources generated before the mod was adding not being made infinite
+    - Fixed resources generated before the mod was added not being made infinite

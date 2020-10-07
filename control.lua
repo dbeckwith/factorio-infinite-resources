@@ -5,6 +5,7 @@ function fix_resources_for_surface(surface, area)
     }
     for _, resource in pairs(resources) do
         -- set all new resources to exactly their normal amount
+        resource.initial_amount = resource.prototype.normal_resource_amount
         resource.amount = resource.prototype.normal_resource_amount
     end
 end
@@ -15,6 +16,10 @@ script.on_configuration_changed(function()
     end
 end)
 
-script.on_event(defines.events.on_chunk_generated, function(event)
-    fix_resources_for_surface(event.surface, event.area)
+script.on_event(defines.events.on_chunk_charted, function(event)
+    fix_resources_for_surface(game.surfaces[event.surface_index], event.area)
+end)
+
+script.on_event(defines.events.on_surface_created, function(event)
+    fix_resources_for_surface(game.surfaces[event.surface_index])
 end)
