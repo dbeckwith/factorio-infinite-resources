@@ -4,9 +4,11 @@ function fix_resources_for_surface(surface, area)
         type = 'resource',
     }
     for _, resource in pairs(resources) do
-        -- set all new resources to exactly their normal amount
-        resource.initial_amount = resource.prototype.normal_resource_amount
-        resource.amount = resource.prototype.normal_resource_amount
+        if resource.prototype.infinite_resource then
+            -- set all new resources to exactly their normal amount
+            resource.initial_amount = resource.prototype.normal_resource_amount
+            resource.amount = resource.prototype.normal_resource_amount
+        end
     end
 end
 
