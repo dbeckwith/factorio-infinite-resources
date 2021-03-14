@@ -18,8 +18,8 @@ script.on_configuration_changed(function()
     end
 end)
 
-script.on_event(defines.events.on_chunk_charted, function(event)
-    fix_resources_for_surface(game.surfaces[event.surface_index], event.area)
+script.on_event(defines.events.on_chunk_generated, function(event)
+    fix_resources_for_surface(event.surface, event.area)
 end)
 
 script.on_event(defines.events.on_surface_created, function(event)
